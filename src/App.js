@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TempratureInput from './tempratureInput'
 import BoilingVerdict from './tempFunction'
 
+
 function toCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
@@ -29,7 +30,6 @@ class Calculator extends Component {
   handleFahrenheitChange = (temprature) => {
     this.setState({ scale: 'f', temprature })
   }
-
   render() {
     const temprature = this.state.temprature;
     const scale = this.state.scale;
